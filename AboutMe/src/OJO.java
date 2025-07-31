@@ -9,5 +9,4 @@ public class OJO{
         System.out.print("  ***  ");
         System.out.print(" ***** ");
     }
-
 }
