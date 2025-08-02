@@ -28,6 +28,7 @@ public class Calculator {
         else if (operator == '*') {
             result = num1 * num2;
         }
+        // Check if num2 is zero and prevents division by zero
         else if (operator == '/') {
             if (num2 != 0) {
                 result = num1 / num2;
@@ -36,10 +37,12 @@ public class Calculator {
                 return;
             }
         }
+        // Checks for invalid operator
         else {
             System.out.println("Invalid operator.");
             return;
         }
+        // Prints Result
         System.out.println("Result: " + result);
         }
     }
