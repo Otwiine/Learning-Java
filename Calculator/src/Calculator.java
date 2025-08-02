@@ -17,6 +17,29 @@ public class Calculator {
         System.out.print("Select an Operator (+,-,*,/): ");
         char operator = input.next().charAt(0); // read first character of input
 
-
+        // Perform calculation based on operator
+        double result = 0;
+        if (operator == '+') {
+            result = num1 + num2;
+        }
+        else if (operator == '-') {
+            result = num1 - num2;
+        }
+        else if (operator == '*') {
+            result = num1 * num2;
+        }
+        else if (operator == '/') {
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                System.out.println("Error: Cannot divide by zero.");
+                return;
+            }
+        }
+        else {
+            System.out.println("Invalid operator.");
+            return;
+        }
+        System.out.println("Result: " + result);
         }
     }
